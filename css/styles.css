@@ -1,16 +1,30 @@
 :root {
-  --background-color: #ffffff;
-  --color: #212121;
+  --brand-color-first: #fff;
+  --brand-color-second: #212121;
+
+  --logo-color-first: #000;
+  --logo-color-second: #2196f3;
+  --logo-color-first-footer: #2196f3;
+  --logo-color-second-footer: #fff;
+
+  --baner-color: #2f303a;
+
+  --link-select-color: #fff;
+  --link-select-bgc: #2196f3;
+
+  --p-link-contact: #757575;
+  --color-description: #757575;
+  --footer-coolor: #2f303a;
 }
 
 body {
   font-family: "Roboto", sans-serif;
-  color: #212121;
-  background-color: #ffffff;
+  color: var(--brand-color-second);
+  background-color: var(--brand-color-first);
 }
 .p-link {
   text-decoration: none;
-  color: #212121;
+  color: var(--brand-color-second);
 }
 .p-list {
   list-style-type: none;
@@ -28,11 +42,11 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2em;
-  color: #000;
+  color: var(--logo-color-first);
   text-decoration: none;
 }
 .p-header-logo span:first-of-type {
-  color: #2196f3;
+  color: var(--logo-color-second);
 }
 .p-navigation,
 .p-menu li,
@@ -47,17 +61,17 @@ body {
 }
 
 .p-select-page {
-  color: #2196f3;
+  color: var(--link-select-bgc);
 }
 
 .p-link-contact-mail {
-  color: #757575;
+  color: var(--p-link-contact);
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14em;
 }
 .p-link-contact-phone {
-  color: #757575;
+  color: var(--p-link-contact);
   text-decoration: none;
   font-size: 14px;
   font-weight: 500;
@@ -78,7 +92,7 @@ body {
   line-height: 1.87em;
 }
 .p-footer {
-  background-color: #2f303a;
+  background-color: var(--footer-coolor);
 }
 .p-footer-adress-list li {
   line-height: 1.71em;
@@ -89,25 +103,25 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2em;
-  color: #2196f3;
+  color: var(--logo-color-first-footer);
   text-decoration: none;
 }
 .p-footer-logo span {
-  color: #ffffff;
+  color: var(--logo-color-second-footer);
 }
 .p-link-footer-adress {
-  color: #ffffff;
+  color: var(--brand-color-first);
   font-size: 14px;
   line-height: 1.71em;
 }
 .p-link-footer-contact-mail {
-  color: #757575;
+  color: var(--p-link-contact);
   font-size: 14px;
   font-weight: 500;
   line-height: 1.71em;
 }
 .p-link-footer-contact-phone {
-  color: #757575;
+  color: var(--p-link-contact);
   font-size: 14px;
   font-weight: 500;
   line-height: 1.71em;
@@ -115,10 +129,10 @@ body {
 }
 
 .p-baner {
-  background-color: #2f303a;
+  background-color: var(--baner-color);
 }
 .p-baner h1 {
-  color: #ffffff;
+  color: var(--brand-color-first);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.5em;
@@ -137,7 +151,7 @@ body {
 .p-description p {
   font-size: 14px;
   line-height: 1.7em;
-  color: #757575;
+  color: var(--color-description);
 }
 
 .p-offer h2,
@@ -163,7 +177,7 @@ body {
 .p-team p {
   font-size: 16px;
   line-height: 19px;
-  color: #757575;
+  color: var(--color-description);
 }
 
 .p-link-contact-mail:hover,
@@ -180,12 +194,12 @@ body {
 .p-link-footer-contact-phone:focus,
 .p-link-footer-contact-mail:hover,
 .p-link-footer-contact-mail:focus {
-  color: #ffffff;
-  background-color: #2196f3;
+  color: var(--link-select-color);
+  background-color: var(--link-select-bgc);
 }
 .p-button:hover,
 .p-button:focus {
-  color: #ffffff;
-  background-color: #2196f3;
+  color: var(--link-select-color);
+  background-color: var(--link-select-bgc);
   cursor: pointer;
 }

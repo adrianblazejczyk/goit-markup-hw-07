@@ -1,3 +1,191 @@
-p {
-  color: red;
+:root {
+  --background-color: #ffffff;
+  --color: #212121;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #212121;
+  background-color: #ffffff;
+}
+.p-link {
+  text-decoration: none;
+  color: #212121;
+}
+.p-list {
+  list-style-type: none;
+}
+.p-button {
+  text-decoration: none;
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63em;
+}
+
+.p-header-logo {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2em;
+  color: #000;
+  text-decoration: none;
+}
+.p-header-logo span:first-of-type {
+  color: #2196f3;
+}
+.p-navigation,
+.p-menu li,
+.p-list-filters li {
+  display: inline-block;
+}
+.p-menu {
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14em;
+}
+
+.p-select-page {
+  color: #2196f3;
+}
+
+.p-link-contact-mail {
+  color: #757575;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14em;
+}
+.p-link-contact-phone {
+  color: #757575;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14em;
+}
+.p-portfolio-list {
+  columns: 3;
+}
+.p-portfolio-list h3 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2em;
+}
+
+.p-portfolio-list p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87em;
+}
+.p-footer {
+  background-color: #2f303a;
+}
+.p-footer-adress-list li {
+  line-height: 1.71em;
+  font-weight: 400;
+}
+.p-footer-logo {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2em;
+  color: #2196f3;
+  text-decoration: none;
+}
+.p-footer-logo span {
+  color: #ffffff;
+}
+.p-link-footer-adress {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 1.71em;
+}
+.p-link-footer-contact-mail {
+  color: #757575;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.71em;
+}
+.p-link-footer-contact-phone {
+  color: #757575;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.71em;
+  text-decoration: none;
+}
+
+.p-baner {
+  background-color: #2f303a;
+}
+.p-baner h1 {
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.5em;
+}
+
+.p-description li {
+  display: inline-block;
+}
+
+.p-description h3 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14em;
+}
+
+.p-description p {
+  font-size: 14px;
+  line-height: 1.7em;
+  color: #757575;
+}
+
+.p-offer h2,
+.p-team h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16em;
+}
+
+.p-offer li {
+  display: inline-block;
+}
+
+.p-team li {
+  display: inline-block;
+}
+
+.p-team h3 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18em;
+}
+.p-team p {
+  font-size: 16px;
+  line-height: 19px;
+  color: #757575;
+}
+
+.p-link-contact-mail:hover,
+.p-link-contact-mail:focus,
+.p-link-contact-phone:hover,
+.p-link-contact-phone:focus,
+.p-link:hover,
+.p-link:focus,
+.p-link span:hover,
+.p-link span:focus,
+.p-header-logo:hover,
+.p-header-logo:focus,
+.p-link-footer-contact-phone:hover,
+.p-link-footer-contact-phone:focus,
+.p-link-footer-contact-mail:hover,
+.p-link-footer-contact-mail:focus {
+  color: #ffffff;
+  background-color: #2196f3;
+}
+.p-button:hover,
+.p-button:focus {
+  color: #ffffff;
+  background-color: #2196f3;
+  cursor: pointer;
 }

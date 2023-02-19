@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
+    <!--************************* index.html_section__header *************************-->
     <header class="header-section container">
       <a class="header-logo" href="./index.html"
         ><span>Web</span><span>Studio</span>
@@ -29,58 +30,85 @@
           <li><a class="link" href="#contact">Kontakt</a></li>
         </ul>
       </nav>
-      <a class="link-contact-mail" href="mailto:info@devstudio.com"
-        >info@devstudio.com</a
+      <a class="link-contact-mail" href="mailto:info@devstudio.com">
+        <!-- <svg class="header__ico-mail" width="16" height="12">
+          <use href="./images/icons.svg#icon-email"></use>
+        </svg> -->
+        info@devstudio.com</a
       >
-      <a class="link-contact-phone" href="tel:+48111111111">+48 111 111 111</a>
-    </header>
 
+      <a class="link-contact-phone" href="tel:+48111111111">
+        <svg class="header__ico-phone" width="10" height="16">
+          <use href="./images/icons.svg#icon-phone"></use>
+        </svg>
+        +48 111 111 111</a
+      >
+    </header>
     <main>
-      <!--banner-->
-      <section class="banner">
-        <h1>EFEKTYWNE ROZWIĄZANIA <br> DLA WASZEGO BIZNESU</h1>
-        <button class="button" type="button">Zamów usługe</button>
+      <!--************************* index.html_section__banner ************************-->
+      <section class="section-banner">
+        <div class="section-banner--transparency section-banner-flex">
+          <h1 class="section-banner_header--2">
+            EFEKTYWNE ROZWIĄZANIA <br />
+            DLA WASZEGO BIZNESU
+          </h1>
+          <button class="button section-banner_button" type="button">
+            Zamów usługe
+          </button>
+        </div>
       </section>
-      <!-- lorem -->
-      <section class="section container">
-        <ul class="list description">
-          <li>
-            <h3>LOREM IPSUM</h3>
-            <p>
+      <!--************************* index.html_section-description ********************-->
+      <section class="section-description container">
+        <ul class="section-description__list">
+          <li class="section-description__item">
+            <svg width="70px" height="70px" class="section-description__ico">
+              <use href="./images/icons.svg#icon-antenna-1"></use>
+            </svg>
+            <h3 class="section-description_header--3">LOREM IPSUM</h3>
+            <p class="section-description_paragraf">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
           </li>
-          <li>
-            <h3>LOREM IPSUM</h3>
-            <p>
+          <li class="section-description__item">
+            <svg width="70px" height="70px" class="section-description__ico">
+              <use href="./images/icons.svg#icon-clock-1"></use>
+            </svg>
+            <h3 class="section-description_header--3">LOREM IPSUM</h3>
+            <p class="section-description_paragraf">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
           </li>
-          <li>
-            <h3>LOREM IPSUM</h3>
-            <p>
+          <li class="section-description__item">
+            <svg width="70px" height="70px" class="section-description__ico">
+              <use href="./images/icons.svg#icon-diagram-1"></use>
+            </svg>
+            <h3 class="section-description_header--3">LOREM IPSUM</h3>
+            <p class="section-description_paragraf">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
           </li>
-          <li>
-            <h3>LOREM IPSUM</h3>
-            <p>
+          <li class="section-description__item">
+            <svg width="70px" height="70px" class="section-description__ico">
+              <use href="./images/icons.svg#icon-astronaut-1"></use>
+            </svg>
+            <h3 class="section-description_header--3">LOREM IPSUM</h3>
+            <p class="section-description_paragraf">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
               arcu sem. Sed non sodales dui. Interdum et malesuada
             </p>
           </li>
         </ul>
       </section>
-      <!--what we do-->
-      <section class="offer section container">
-        <h2>Czym się zajmujemy</h2>
-        <ul class="list">
+      <!--************************* index.html_section-offer **************************-->
+      <section class="section-offer offer container">
+        <h2 class="section-offer__header--2">Czym się zajmujemy</h2>
+        <ul class="section-offer__list">
           <li>
             <img
-              src="./images/1_1.jpg"
+              src="./images/index/1_1.jpg"
               alt="Tworzenie backendu"
               width="370"
               height="294"
@@ -88,7 +116,7 @@
           </li>
           <li>
             <img
-              src="./images/1_2.jpg"
+              src="./images/index/1_2.jpg"
               alt="Tworzenie aplikacji mobilnych"
               width="370"
               height="294"
@@ -96,7 +124,7 @@
           </li>
           <li>
             <img
-              src="./images/1_3.jpg"
+              src="./images/index/1_3.jpg"
               alt="Tworzenie frontendu"
               width="370"
               height="294"
@@ -104,73 +132,213 @@
           </li>
         </ul>
       </section>
-      <!-- team -->
-      <section class="team">
+      <!--************************* index.html_section-team ***************************-->
+      <section class="section-team">
         <div class="section container">
-          <h2>Nasz zespół</h2>
-          <ul class="list">
-            <li>
+          <h2 class="section-team__header--2">Nasz zespół</h2>
+          <ul class="section-team__person-list">
+            <li class="section-team__person-item">
               <figure>
                 <img
-                  src="./images/2_1_john_doe.jpg"
+                  src="./images/index/2_1_john_doe.jpg"
                   alt="John Doe - Product Designer"
                   width="270"
                   height="260"
                 />
                 <figcaption>
-                  <h3>John Doe</h3>
-                  <p>Product Designer</p>
+                  <h3 class="section-team__header--3">John Doe</h3>
+                  <p class="section-team__paragraf">Product Designer</p>
                 </figcaption>
+                <ul class="section-team__media-list">
+                  <li class="section-team__media-item">
+                    <svg width="20px" height="20px">
+                      <use href="./images/icons.svg#icon-instagram-2"></use>
+                    </svg>
+                  </li>
+                  <li class="section-team__media-item">
+                    <svg width="20px" height="20px">
+                      <use href="./images/icons.svg#icon-twitter-1"></use>
+                    </svg>
+                  </li>
+                  <li class="section-team__media-item">
+                    <svg width="20px" height="20px">
+                      <use href="./images/icons.svg#icon-facebook-1"></use>
+                    </svg>
+                  </li>
+                  <li class="section-team__media-item">
+                    <svg width="20px" height="20px">
+                      <use href="./images/icons.svg#icon-linkedin-1"></use>
+                    </svg>
+                  </li>
+                </ul>
               </figure>
             </li>
-            <li>
+            <li class="section-team__person-item">
               <figure>
                 <img
-                  src="./images/2_2_john_doe.jpg"
+                  src="./images/index/2_2_john_doe.jpg"
                   alt="John Doe - Frontend Developer"
                   width="270"
                   height="260"
                 />
                 <figcaption>
-                  <h3>John Doe</h3>
-                  <p>Frontend Developer</p>
+                  <h3 class="section-team__header--3">John Doe</h3>
+                  <p class="section-team__paragraf">Frontend Developer</p>
                 </figcaption>
+                <ul class="section-team__media-list">
+                  <li class="section-team__media-item">
+                    <svg width="20px" height="20px">
+                      <use href="./images/icons.svg#icon-instagram-2"></use>
+                    </svg>
+                  </li>
+                  <li class="section-team__media-item">
+                    <svg width="20px" height="20px">
+                      <use href="./images/icons.svg#icon-twitter-1"></use>
+                    </svg>
+                  </li>
+                  <li class="section-team__media-item">
+                    <svg width="20px" height="20px">
+                      <use href="./images/icons.svg#icon-facebook-1"></use>
+                    </svg>
+                  </li>
+                  <li class="section-team__media-item">
+                    <svg width="20px" height="20px">
+                      <use href="./images/icons.svg#icon-linkedin-1"></use>
+                    </svg>
+                  </li>
+                </ul>
               </figure>
             </li>
-            <li>
+            <li class="section-team__person-item">
               <figure>
                 <img
-                  src="./images/2_3_john_doe.jpg"
+                  src="./images/index/2_3_john_doe.jpg"
                   alt="John Doe - Marketing"
                   width="270"
                   height="260"
                 />
                 <figcaption>
-                  <h3>John Doe</h3>
-                  <p>Marketing</p>
+                  <h3 class="section-team__header--3">John Doe</h3>
+                  <p class="section-team__paragraf">Marketing</p>
                 </figcaption>
+                <ul class="section-team__media-list">
+                  <li class="section-team__media-item">
+                    <svg width="20px" height="20px">
+                      <use href="./images/icons.svg#icon-instagram-2"></use>
+                    </svg>
+                  </li>
+                  <li class="section-team__media-item">
+                    <svg width="20px" height="20px">
+                      <use href="./images/icons.svg#icon-twitter-1"></use>
+                    </svg>
+                  </li>
+
+                  <li class="section-team__media-item">
+                    <svg width="20px" height="20px">
+                      <use href="./images/icons.svg#icon-facebook-1"></use>
+                    </svg>
+                  </li>
+                  <li class="section-team__media-item">
+                    <svg width="20px" height="20px">
+                      <use href="./images/icons.svg#icon-linkedin-1"></use>
+                    </svg>
+                  </li>
+                </ul>
               </figure>
             </li>
-            <li>
+            <li class="section-team__person-item">
               <figure>
                 <img
-                  src="images/2_4_john_doe.jpg"
+                  src="images/index/2_4_john_doe.jpg"
                   alt="John Doe - UI Designer"
                   width="270"
                   height="260"
                 />
                 <figcaption>
-                  <h3>John Doe</h3>
-                  <p>UI Designer</p>
+                  <h3 class="section-team__header--3">John Doe</h3>
+                  <p class="section-team__paragraf">UI Designer</p>
                 </figcaption>
+                <ul class="section-team__media-list">
+                  <li class="section-team__media-item">
+                    <svg width="20px" height="20px">
+                      <use href="./images/icons.svg#icon-instagram-2"></use>
+                    </svg>
+                  </li>
+                  <li class="section-team__media-item">
+                    <svg width="20px" height="20px">
+                      <use href="./images/icons.svg#icon-twitter-1"></use>
+                    </svg>
+                  </li>
+                  <li class="section-team__media-item">
+                    <svg width="20px" height="20px">
+                      <use href="./images/icons.svg#icon-facebook-1"></use>
+                    </svg>
+                  </li>
+                  <li class="section-team__media-item">
+                    <svg width="20px" height="20px">
+                      <use href="./images/icons.svg#icon-linkedin-1"></use>
+                    </svg>
+                  </li>
+                </ul>
               </figure>
             </li>
           </ul>
         </div>
       </section>
+      <!--************************* index.html_section-client *************************-->
+      <section class="section-client container">
+        <h2 class="section-client__header--2">Nasi klienci</h2>
+        <ul class="section-client__list">
+          <li class="section-client__item">
+            <a href="#">
+              <svg width="170px" height="92px">
+                <use href="./images/icons.svg#icon-client-1"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="section-client__item">
+            <a href="#">
+              <svg width="170px" height="92px">
+                <use
+                  class="testy"
+                  href="./images/icons.svg#icon-client-2"
+                ></use>
+              </svg>
+            </a>
+          </li>
+          <li class="section-client__item">
+            <a href="#">
+              <svg width="170px" height="92px">
+                <use href="./images/icons.svg#icon-client-3"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="section-client__item">
+            <a href="#">
+              <svg width="170px" height="92px">
+                <use href="./images/icons.svg#icon-client-4"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="section-client__item">
+            <a href="#">
+              <svg width="170px" height="92px">
+                <use href="./images/icons.svg#icon-client-5"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="section-client__item">
+            <a href="#">
+              <svg width="170px" height="92px">
+                <use href="./images/icons.svg#icon-client-6"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </section>
     </main>
-
-    <footer id="contact" class="footer">
+    <!--************************* index.html_section-footer ***************************-->
+    <footer id="contact" class="footer section-footer">
       <div class="container">
         <a class="link footer-logo" href="./index.html">
           <span>Web</span>Studio</a
@@ -198,6 +366,31 @@
               >
             </li>
           </ul>
+          <div class="section-footer-social">
+            <p>Dołącz do nas</p>
+            <ul class="section-footer-social__list">
+              <li class="section-footer-social__item">
+                <svg width="20px" height="20px">
+                  <use href="./images/icons.svg#icon-instagram-2"></use>
+                </svg>
+              </li>
+              <li class="section-footer-social__item">
+                <svg width="20px" height="20px">
+                  <use href="./images/icons.svg#icon-twitter-1"></use>
+                </svg>
+              </li>
+              <li class="section-footer-social__item">
+                <svg width="20px" height="20px">
+                  <use href="./images/icons.svg#icon-facebook-1"></use>
+                </svg>
+              </li>
+              <li class="section-footer-social__item">
+                <svg width="20px" height="20px">
+                  <use href="./images/icons.svg#icon-linkedin-1"></use>
+                </svg>
+              </li>
+            </ul>
+          </div>
         </address>
       </div>
     </footer>

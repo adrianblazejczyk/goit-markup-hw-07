@@ -23,26 +23,31 @@
       </a>
       <nav class="navigation">
         <ul class="list menu">
-          <li><a class="link select-page" href="./index.html">Agencja</a></li>
+          <li>
+            <a class="link header--select-page" href="./index.html">Agencja</a>
+          </li>
           <li>
             <a class="link" href="./portfolio.html">Portfolio</a>
           </li>
           <li><a class="link" href="#contact">Kontakt</a></li>
         </ul>
       </nav>
-      <a class="link-contact-mail" href="mailto:info@devstudio.com">
-        <!-- <svg class="header__ico-mail" width="16" height="12">
-          <use href="./images/icons.svg#icon-email"></use>
-        </svg> -->
-        info@devstudio.com</a
-      >
-
-      <a class="link-contact-phone" href="tel:+48111111111">
-        <svg class="header__ico-phone" width="10" height="16">
-          <use href="./images/icons.svg#icon-phone"></use>
-        </svg>
-        +48 111 111 111</a
-      >
+      <div class="header__contact-mail">
+        <a class="header__contact-mail-text" href="mailto:info@devstudio.com">
+          <svg width="16" height="12">
+            <use href="./images/icons.svg#icon-envelope"></use>
+          </svg>
+          info@devstudio.com</a
+        >
+      </div>
+      <div class="header__concact-phone">
+        <a class="header__contact-phone-text" href="tel:+48111111111">
+          <svg width="10" height="16">
+            <use href="./images/icons.svg#icon-smartphone"></use>
+          </svg>
+          +48 111 111 111</a
+        >
+      </div>
     </header>
     <main>
       <!--************************* index.html_section__banner ************************-->
@@ -290,14 +295,14 @@
         <h2 class="section-client__header--2">Nasi klienci</h2>
         <ul class="section-client__list">
           <li class="section-client__item">
-            <a href="#">
+            <a class="section-client__link" href="#">
               <svg width="170px" height="92px">
                 <use href="./images/icons.svg#icon-client-1"></use>
               </svg>
             </a>
           </li>
           <li class="section-client__item">
-            <a href="#">
+            <a class="section-client__link" href="#">
               <svg width="170px" height="92px">
                 <use
                   class="testy"
@@ -307,28 +312,28 @@
             </a>
           </li>
           <li class="section-client__item">
-            <a href="#">
+            <a class="section-client__link" href="#">
               <svg width="170px" height="92px">
                 <use href="./images/icons.svg#icon-client-3"></use>
               </svg>
             </a>
           </li>
           <li class="section-client__item">
-            <a href="#">
+            <a class="section-client__link" href="#">
               <svg width="170px" height="92px">
                 <use href="./images/icons.svg#icon-client-4"></use>
               </svg>
             </a>
           </li>
           <li class="section-client__item">
-            <a href="#">
+            <a class="section-client__link" href="#">
               <svg width="170px" height="92px">
                 <use href="./images/icons.svg#icon-client-5"></use>
               </svg>
             </a>
           </li>
           <li class="section-client__item">
-            <a href="#">
+            <a class="section-client__link" href="#">
               <svg width="170px" height="92px">
                 <use href="./images/icons.svg#icon-client-6"></use>
               </svg>
@@ -339,59 +344,69 @@
     </main>
     <!--************************* index.html_section-footer ***************************-->
     <footer id="contact" class="footer section-footer">
-      <div class="container">
-        <a class="link footer-logo" href="./index.html">
-          <span>Web</span>Studio</a
-        >
-        <address>
-          <ul class="list">
-            <li class="footer-adress-list">
-              <a
-                class="link link-footer-adress"
-                href="https://goo.gl/maps/LbEhRWsDch6tADg58"
-                target="_blank"
-                >m. Warszawa, Aleje Jerozolimskie 21</a
-              >
-            </li>
-            <li>
-              <a
-                class="link-footer-contact-mail"
-                href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li>
-              <a class="link-footer-contact-phone" href="tel:+48111111111"
-                >+48 111 111 111</a
-              >
-            </li>
-          </ul>
-          <div class="section-footer-social">
-            <p>Dołącz do nas</p>
-            <ul class="section-footer-social__list">
-              <li class="section-footer-social__item">
+      <div class="container section-footer__wrap">
+        <div>
+          <a class="link footer-logo" href="./index.html">
+            <span>Web</span>Studio</a
+          >
+          <address>
+            <ul class="list">
+              <li class="footer-adress-list">
+                <a
+                  class="link link-footer-adress"
+                  href="https://goo.gl/maps/LbEhRWsDch6tADg58"
+                  target="_blank"
+                  >m. Warszawa, Aleje Jerozolimskie 21</a
+                >
+              </li>
+              <li>
+                <a
+                  class="link-footer-contact-mail"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a class="link-footer-contact-phone" href="tel:+48111111111"
+                  >+48 111 111 111</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="section-footer-social">
+          <p class="section-footer-social__description">Dołącz do nas</p>
+          <ul class="section-footer-social__list">
+            <li class="asection-footer__media-item">
+              <a class="section-footer__media-link" href="#">
                 <svg width="20px" height="20px">
                   <use href="./images/icons.svg#icon-instagram-2"></use>
                 </svg>
-              </li>
-              <li class="section-footer-social__item">
+              </a>
+            </li>
+            <li class="asection-footer__media-item">
+              <a class="section-footer__media-link" href="#">
                 <svg width="20px" height="20px">
                   <use href="./images/icons.svg#icon-twitter-1"></use>
                 </svg>
-              </li>
-              <li class="section-footer-social__item">
+              </a>
+            </li>
+            <li class="asection-footer__media-item">
+              <a class="section-footer__media-link" href="#">
                 <svg width="20px" height="20px">
                   <use href="./images/icons.svg#icon-facebook-1"></use>
                 </svg>
-              </li>
-              <li class="section-footer-social__item">
+              </a>
+            </li>
+            <li class="asection-footer__media-item">
+              <a class="section-footer__media-link" href="#">
                 <svg width="20px" height="20px">
                   <use href="./images/icons.svg#icon-linkedin-1"></use>
                 </svg>
-              </li>
-            </ul>
-          </div>
-        </address>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
   </body>

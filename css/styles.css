@@ -483,8 +483,9 @@ body {
 .link-contact-phone:focus,
 .header__contact-mail-text:focus,
 .header__contact-phone-text:focus {
-  color: var(--link-select-color);
-  background-color: var(--link-select-bgc);
+  /* color: var(--link-select-color); */
+  /* background-*/
+  color: var(--link-select-bgc);
 }
 .link:hover,
 .link span:hover,

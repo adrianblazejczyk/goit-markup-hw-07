@@ -116,14 +116,13 @@ body {
 .header__contact-mail {
   margin-left: 299px;
   margin-right: 30px;
+  transition: color 2500ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header__contact-mail-link {
+  text-decoration: none;
   fill: var(--link-contact);
   color: var(--link-contact);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.header__contact-mail-text {
-  text-decoration: none;
-  color: inherit;
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14em;
@@ -133,16 +132,13 @@ body {
   column-gap: 10px;
 }
 .header__concact-phone {
-  fill: var(--link-contact);
-  color: var(--link-contact);
   display: flex;
   align-items: center;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.header__contact-phone-text {
+.header__contact-phone-link {
   text-decoration: none;
-  color: inherit;
+  fill: var(--link-contact);
+  color: var(--link-contact);
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14em;
@@ -150,12 +146,14 @@ body {
   display: flex;
   align-items: center;
   column-gap: 10px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header__contact-mail:hover,
-.header__contact-mail:focus,
-.header__concact-phone:hover,
-.header__concact-phone:focus {
+.header__contact-mail-link:hover,
+.header__contact-mail-link:focus,
+.header__contact-phone-link:hover,
+.header__contact-phone-link:focus {
   cursor: pointer;
   fill: var(--link-select_mail-tel-color);
   color: var(--link-select_mail-tel-color);
@@ -189,6 +187,7 @@ body {
 
 .section-footer__media-link {
   fill: #afb1b8;
+  outline: none;
   padding: 12px 12px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
@@ -359,7 +358,10 @@ body {
   align-items: center;
   margin-bottom: 30px;
 }
-.section-team__media-item {
+.section-team__media-link {
+  outline: none;
+  display: flex;
+  border-style: none;
   fill: #afb1b8;
   padding: 12px 12px;
   border-radius: 50%;
@@ -368,8 +370,8 @@ body {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.section-team__media-item:hover,
-.section-team__media-item:focus {
+.section-team__media-link:hover,
+.section-team__media-link:focus {
   background-color: #2196f3;
   fill: #ffffff;
   cursor: pointer;
@@ -565,6 +567,7 @@ body {
   line-height: 1.71em;
   font-style: normal;
   margin-bottom: 9px;
+  outline: none;
 }
 
 .link-footer-contact-mail {
@@ -574,6 +577,7 @@ body {
   line-height: 1.71em;
   font-style: normal;
   margin-bottom: 9px;
+  outline: none;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link-footer-contact-phone {
@@ -584,6 +588,7 @@ body {
   text-decoration: none;
   font-style: normal;
   margin-bottom: 9px;
+  outline: none;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -595,8 +600,8 @@ body {
 .link-footer-contact-mail:focus,
 .link-contact-mail:focus,
 .link-contact-phone:focus,
-.header__contact-mail-text:focus,
-.header__contact-phone-text:focus {
+.header__contact-mail-link:focus,
+.header__contact-phone-link:focus {
   color: var(--link-select-bgc);
 }
 .link:hover,

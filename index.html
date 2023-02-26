@@ -57,7 +57,11 @@
             EFEKTYWNE ROZWIĄZANIA <br />
             DLA WASZEGO BIZNESU
           </h1>
-          <button class="button section-banner_button" type="button">
+          <button
+            class="button section-banner_button"
+            type="button"
+            data-modal-open
+          >
             Zamów usługe
           </button>
         </div>
@@ -111,29 +115,42 @@
       <section class="section-offer offer container">
         <h2 class="section-offer__header--2">Czym się zajmujemy</h2>
         <ul class="section-offer__list">
-          <li>
+          <li class="section-offer__item">
             <img
               src="./images/index/1_1.jpg"
               alt="Tworzenie backendu"
               width="370"
               height="294"
             />
+            <div class="section-offer__list-description-bgc">
+              <p class="section-offer__list-description">
+                Aplikacje komputerowe
+              </p>
+            </div>
           </li>
-          <li>
+          <li class="section-offer__item">
             <img
               src="./images/index/1_2.jpg"
               alt="Tworzenie aplikacji mobilnych"
               width="370"
               height="294"
             />
+            <div class="section-offer__list-description-bgc">
+              <p class="section-offer__list-description">Aplikacje mobilne</p>
+            </div>
           </li>
-          <li>
+          <li class="section-offer__item">
             <img
               src="./images/index/1_3.jpg"
               alt="Tworzenie frontendu"
               width="370"
               height="294"
             />
+            <div class="section-offer__list-description-bgc">
+              <p class="section-offer__list-description">
+                Rozwiązania graficzne
+              </p>
+            </div>
           </li>
         </ul>
       </section>
@@ -377,28 +394,28 @@
         <div class="section-footer-social">
           <p class="section-footer-social__description">Dołącz do nas</p>
           <ul class="section-footer-social__list">
-            <li class="asection-footer__media-item">
+            <li class="section-footer__media-item">
               <a class="section-footer__media-link" href="#">
                 <svg width="20px" height="20px">
                   <use href="./images/icons.svg#icon-instagram-2"></use>
                 </svg>
               </a>
             </li>
-            <li class="asection-footer__media-item">
+            <li class="section-footer__media-item">
               <a class="section-footer__media-link" href="#">
                 <svg width="20px" height="20px">
                   <use href="./images/icons.svg#icon-twitter-1"></use>
                 </svg>
               </a>
             </li>
-            <li class="asection-footer__media-item">
+            <li class="section-footer__media-item">
               <a class="section-footer__media-link" href="#">
                 <svg width="20px" height="20px">
                   <use href="./images/icons.svg#icon-facebook-1"></use>
                 </svg>
               </a>
             </li>
-            <li class="asection-footer__media-item">
+            <li class="section-footer__media-item">
               <a class="section-footer__media-link" href="#">
                 <svg width="20px" height="20px">
                   <use href="./images/icons.svg#icon-linkedin-1"></use>
@@ -409,5 +426,19 @@
         </div>
       </div>
     </footer>
+    <div class="section-order is-hidden" data-modal>
+      <div class="section-order_modal">
+        <button
+          class="section-order_button-exit"
+          type="button"
+          data-modal-close
+        >
+          <svg width="11px" height="11px">
+            <use href="./images/icons.svg#icon-exit"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/model.js"></script>
   </body>
 </html>

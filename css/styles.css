@@ -46,6 +46,7 @@ body {
   margin: 0 auto;
 }
 .button {
+  outline: none;
   text-decoration: none;
   text-align: center;
   font-weight: 500;
@@ -58,6 +59,7 @@ body {
   padding-bottom: 94px;
 }
 .link {
+  outline: none;
   text-decoration: none;
   color: var(--brand-color-second);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -87,6 +89,7 @@ body {
   align-items: center;
 }
 .header-logo {
+  outline: none;
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
@@ -120,6 +123,7 @@ body {
     fill 2500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header__contact-mail-link {
+  outline: none;
   text-decoration: none;
   fill: var(--link-contact);
   color: var(--link-contact);
@@ -136,6 +140,7 @@ body {
   align-items: center;
 }
 .header__contact-phone-link {
+  outline: none;
   text-decoration: none;
   fill: var(--link-contact);
   color: var(--link-contact);
@@ -232,6 +237,7 @@ body {
   text-transform: uppercase;
 }
 .section-banner_button {
+  outline: none;
   display: block;
   background-color: var(--button_order-background-color);
   color: var(--button_order-color);
@@ -397,6 +403,7 @@ body {
   display: flex;
 }
 .section-client__link {
+  outline: none;
   border: 1px solid var(--section-client__item-ico--border-normal);
   border-radius: 4px;
   fill: var(--section-client__item-ico--fill-normal);
@@ -458,6 +465,7 @@ body {
   gap: 8px;
 }
 .list-filters button {
+  outline: none;
   padding: 6px 22px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),

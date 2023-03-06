@@ -301,28 +301,28 @@
         <div class="section-footer-social">
           <p class="section-footer-social__description">Dołącz do nas</p>
           <ul class="section-footer-social__list">
-            <li class="asection-footer__media-item">
+            <li class="section-footer__media-item">
               <a class="section-footer__media-link" href="#">
                 <svg width="20px" height="20px">
                   <use href="./images/icons.svg#icon-instagram-2"></use>
                 </svg>
               </a>
             </li>
-            <li class="asection-footer__media-item">
+            <li class="section-footer__media-item">
               <a class="section-footer__media-link" href="#">
                 <svg width="20px" height="20px">
                   <use href="./images/icons.svg#icon-twitter-1"></use>
                 </svg>
               </a>
             </li>
-            <li class="asection-footer__media-item">
+            <li class="section-footer__media-item">
               <a class="section-footer__media-link" href="#">
                 <svg width="20px" height="20px">
                   <use href="./images/icons.svg#icon-facebook-1"></use>
                 </svg>
               </a>
             </li>
-            <li class="asection-footer__media-item">
+            <li class="section-footer__media-item">
               <a class="section-footer__media-link" href="#">
                 <svg width="20px" height="20px">
                   <use href="./images/icons.svg#icon-linkedin-1"></use>
@@ -331,7 +331,121 @@
             </li>
           </ul>
         </div>
+
+        <div class="section-footer-newsletter">
+          <label class="section-footer-newsletter__text">
+            <span> Zapisz się do newslettera</span>
+            <div class="section-footer-newsletter__line">
+              <input
+                class="section-footer-newsletter__input"
+                type="mail"
+                name="mail_newsletter"
+                placeholder="E-mail"
+              />
+              <button
+                class="button section-footer-newsletter__button"
+                type="submit"
+              >
+                <span> Zapisz się</span>
+                <svg
+                  class="section-footer-newsletter__ico"
+                  width="24px"
+                  height="24px"
+                >
+                  <use href="./images/icons.svg#icon-send"></use>
+                </svg>
+              </button>
+            </div>
+          </label>
+        </div>
       </div>
+      <div class="section-order is-hidden" data-modal>
+        <div class="section-order_modal">
+          <button
+            class="section-order_button-exit"
+            type="button"
+            data-modal-close
+          >
+            <svg width="11px" height="11px">
+              <use href="./images/icons.svg#icon-exit"></use>
+            </svg>
+          </button>
+          <div class="section-order_wrapper">
+            <h2 class="section-order_heading">
+              Zostaw swoje dane w formularzu poniżej
+            </h2>
+            <label class="section-order__label" for="">
+              Imie
+              <div class="section-order__field">
+                <svg class="section-order__ico" width="18px" height="18px">
+                  <use href="./images/icons.svg#icon-person"></use>
+                </svg>
+                <input class="section-order__input" type="text" name="" id="" />
+              </div>
+            </label>
+            <label class="section-order__label" for="">
+              Telefon
+              <div class="section-order__field">
+                <svg class="section-order__ico" width="18px" height="18px">
+                  <use href="./images/icons.svg#icon-phone"></use>
+                </svg>
+
+                <input class="section-order__input" type="text" name="" id="" />
+              </div>
+            </label>
+            <label class="section-order__label" for="">
+              Email
+              <div class="section-order__field">
+                <svg class="section-order__ico" width="18px" height="18px">
+                  <use href="./images/icons.svg#icon-email"></use>
+                </svg>
+                <input class="section-order__input" type="text" name="" id="" />
+              </div>
+            </label>
+            <label class="section-order__label" for="">
+              <span> Komentarz</span>
+              <div class="section-order__field">
+                <textarea
+                  class="section-order__comment"
+                  name=""
+                  id=""
+                  cols="30"
+                  rows="10"
+                  placeholder="Wprowadź tekst"
+                ></textarea>
+              </div>
+            </label>
+            <label class="section-order__statements" for="">
+              <input
+                class="section-order__statements-input"
+                type="checkbox"
+                name=""
+                id=""
+              />
+              <svg
+                class="section-order__statements-ico-check"
+                width="16px"
+                height="15px"
+              >
+                <use href="./images/icons.svg#icon-check"></use>
+              </svg>
+              <svg
+                class="section-order__statements-ico-uncheck"
+                width="16px"
+                height="15px"
+              >
+                <use href="./images/icons.svg#icon-uncheck"></use>
+              </svg>
+              <span class="section-order__statements-text">
+                Oświadczam iż akceptuję <a href="#">Regulamin</a> i
+                <a href="#">Politykę Prywatności.</a>
+              </span>
+            </label>
+            <button class="section-order__button" type="submit">Wyślij</button>
+          </div>
+        </div>
+      </div>
+      <script src="./js/model.js"></script>
     </footer>
   </body>
 </html>

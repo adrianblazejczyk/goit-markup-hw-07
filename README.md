@@ -1,1 +1,1 @@
-https://adrianblazejczyk.github.io/mkdir-goit-markup-hw-06
+https://adrianblazejczyk.github.io/goit-markup-hw-06/

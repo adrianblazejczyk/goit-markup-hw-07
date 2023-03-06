@@ -212,7 +212,6 @@ body {
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.03em;
-  
 }
 .section-footer-newsletter__line {
   display: flex;
@@ -476,7 +475,7 @@ body {
   transition: 500ms 250ms;
 }
 .section-order_modal {
-  position: relative;
+  position: absolute;
   width: 528px;
   height: 581px;
   background-color: #fff;
@@ -488,17 +487,23 @@ body {
   transform: translate(-50%, -50%);
   display: flex;
   flex-direction: column;
+  
 }
 .section-order_button-exit {
-  position: absolute;
+  /* position: absolute; */
+  align-self: flex-end;
   box-sizing: border-box;
+  width: 30px;
+  height: 30px;
   padding: 9px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   background: #ffffff;
-  top: 8px;
-  right: 8px;
+  margin-top: 8px;
+  margin-right: 8px;
   cursor: pointer;
+  display: flex;
+  
 }
 .section-order_wrapper {
   max-width: 448px;
@@ -511,7 +516,7 @@ body {
   font-size: 20px;
   line-height: 23px;
   text-align: center;
-  margin-top: 40px;
+  margin-top:2px;
   margin-bottom: 2px;
 }
 .section-order__label {
@@ -580,15 +585,16 @@ body {
   position: relative;
 }
 .section-order__statements-input {
- opacity: 0;
+  opacity: 0;
 }
 
-.section-order__statements-input:checked + .section-order__statements-ico-check {
+.section-order__statements-input:checked
+  + .section-order__statements-ico-check {
   background-color: #2196f3;
   fill: white;
   border-radius: 2px;
 }
-.section-order__statements-ico-uncheck{
+.section-order__statements-ico-uncheck {
   position: absolute;
   top: 4px;
   left: 15px;

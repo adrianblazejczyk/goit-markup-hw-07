@@ -1,0 +1,31 @@
+.clients__header {
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16em;
+  margin-top: 94px;
+  margin-bottom: 50px;
+}
+.clients__list {
+  display: flex;
+  margin-bottom: 94px;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 30px;
+}
+.clients__item {
+  display: flex;
+}
+.clients__link {
+  border: 1px solid get-color-client(color);
+  border-radius: 4px;
+  fill: get-color-client(color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    fill: get-color-client(select);
+    border-color: get-color-client(select);
+  }
+}

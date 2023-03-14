@@ -487,7 +487,6 @@ body {
   transform: translate(-50%, -50%);
   display: flex;
   flex-direction: column;
-  
 }
 .section-order_button-exit {
   /* position: absolute; */
@@ -503,7 +502,6 @@ body {
   margin-right: 8px;
   cursor: pointer;
   display: flex;
-  
 }
 .section-order_wrapper {
   max-width: 448px;
@@ -516,7 +514,7 @@ body {
   font-size: 20px;
   line-height: 23px;
   text-align: center;
-  margin-top:2px;
+  margin-top: 2px;
   margin-bottom: 2px;
 }
 .section-order__label {

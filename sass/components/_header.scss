@@ -1,0 +1,103 @@
+.header {
+  border-bottom: 1px solid get-color-header(border);
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__logo {
+  font-family: get-font(secendary);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2em;
+  color: get-color-header(logo-second);
+  text-decoration: none;
+  &:hover {
+    color: var(--link-select_mail-tel-color);
+    .header__logo--blue {
+      color: get-color-header(logo-second);
+    }
+  }
+  &:focus {
+    color: var(--link-select-bgc);
+    .header__logo--blue {
+      color: get-color-header(logo-first);
+    }
+  }
+}
+.header__logo--blue {
+  color: get-color-header(logo-first);
+}
+.header__menu {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14em;
+  margin-left: 93px;
+}
+.header__menu-item {
+  display: inline-block;
+  padding-right: 46px;
+}
+.header__contact-mail {
+  margin-left: 299px;
+  margin-right: 30px;
+}
+.header__contact-mail-link {
+  text-decoration: none;
+  fill: get-color-header(mail);
+  color: get-color-header(mail);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14em;
+  letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    fill: get-color-header(mail-select);
+    color: get-color-header(mail-select);
+  }
+}
+.header__concact-phone {
+  display: flex;
+  align-items: center;
+}
+.header__contact-phone-link {
+  text-decoration: none;
+  fill: get-color-header(phone);
+  color: get-color-header(phone);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14em;
+  letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    fill: get-color-header(phone-select);
+    color: get-color-header(phone-select);
+  }
+}
+.header__menu-item-selected {
+  color: get-color-header(page-select);
+  position: relative;
+  &::after {
+    content: "";
+    width: 0;
+    height: 4px;
+    position: absolute;
+    bottom: -32px;
+    background: get-color-header(page-bgc-select);
+    width: 100%;
+    right: 0;
+    border-radius: 2px;
+  }
+}

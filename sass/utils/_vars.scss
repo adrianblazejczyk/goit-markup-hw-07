@@ -1,0 +1,127 @@
+$fonts: (
+  "primary": "Roboto",
+  "secendary": "Raleway",
+
+  // 16 18 44
+);
+$colors-brand: (
+  "first": #ffffff,
+  "second": #212121,
+);
+$colors-link: (
+  "color": #212121,
+  "select": #212121,
+);
+$colors-header: (
+  "border": #ececec,
+  "logo-first": #2196f3,
+  "logo-second": #000000,
+  "mail": #757575,
+  "mail-select": #2196f3,
+  "phone": #757575,
+  "phone-select": #2196f3,
+  "page-select": #2196f3,
+  "page-bgc-select": #2196f3,
+);
+$colors-baner: (
+  "bgc": #2f303a,
+  "text": #ffffff,
+  "button-bgc": #2196f3,
+  "button": #ffffff,
+);
+$colors-button: (
+  "select": #ffffff,
+  "select-bgc": #2196f3,
+);
+$colors-client: (
+  "color": #afb1b8,
+  "select": #2196f3,
+);
+$colors-description: (
+  "color": #757575,
+  "bgc": #f5f4fa,
+);
+$colors-offer: (
+  "color": #ffffff,
+  "bgc": rgba(47, 48, 58, 0.8),
+);
+$colors-team: (
+  "description": #757575,
+  "bgc": #f5f4fa,
+  "card": #ffffff,
+  "link": #afb1b8,
+  "select": #2196f3,
+);
+$colors-portfolio: (
+  "overlay-bgc": rgba(33, 150, 243, 0.9),
+  "border": #eeeeee,
+  "description": #757575,
+);
+$colors-footer: (
+  "bgc": #2f303a,
+  "logo-first": #2196f3,
+  "logo-second": #ffffff,
+  "link": #ffffff,
+  "mail": #757575,
+  "mail-select": #2196f3,
+  "phone": #757575,
+  "phone-select": #2196f3,
+  "text": #ffffff,
+  "social": #afb1b8,
+  "social-select": #ffffff,
+  "social-bgc-select": #2196f3,
+  "input": rgba(255, 255, 255, 0.6),
+  "input-border": rgba(255, 255, 255, 0.3),
+  "button": #ffffff,
+  "button-bgc": #2196f3,
+  "button-ico": #ffffff,
+);
+$colors-order: (
+  "bgc": rgba(0, 0, 0, 0.2),
+  "modal-bgc": #ffffff,
+  "label-color": #757575,
+  "field": #212121,
+  "select": #2196f3,
+  "button-bgc": #2196f3,
+  "button": #ffffff,
+);
+@function get-font($key) {
+  @return map-get($fonts, $key);
+}
+@function get-color-brand($key) {
+  @return map-get($colors-brand, $key);
+}
+@function get-color-link($key) {
+  @return map-get($colors-link, $key);
+}
+@function get-color-header($key) {
+  @return map-get($colors-header, $key);
+}
+@function get-color-baner($key) {
+  @return map-get($colors-baner, $key);
+}
+@function get-color-button($key) {
+  @return map-get($colors-button, $key);
+}
+@function get-color-client($key) {
+  @return map-get($colors-client, $key);
+}
+@function get-color-description($key) {
+  @return map-get($colors-description, $key);
+}
+@function get-color-offer($key) {
+  @return map-get($colors-offer, $key);
+}
+@function get-color-team($key) {
+  @return map-get($colors-team, $key);
+}
+@function get-color-portfolio($key) {
+  @return map-get($colors-portfolio, $key);
+}
+
+@function get-color-footer($key) {
+  @return map-get($colors-footer, $key);
+}
+@function get-color-order($key) {
+  @return map-get($colors-order, $key);
+}

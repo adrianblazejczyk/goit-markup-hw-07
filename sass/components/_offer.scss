@@ -1,0 +1,39 @@
+.offer {
+    padding-bottom: 94px;
+  }
+  .offer__header {
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16em;
+    margin-bottom: 50px;
+  }
+  .offer__list {
+    display: flex;
+    justify-content: space-between;
+  }
+  .offer__item {
+    position: relative;
+  }
+  .offer__description {
+    position: absolute;
+    font-family: get-font(primary);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: get-color-offer(color);
+  }
+  .offer__description-bgc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    background: get-color-offer(bgc);
+    width: 370px;
+    height: 70px;
+    bottom: 3px;
+    z-index: 1;
+  }

@@ -1,0 +1,15 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+body {
+  font-family: get-font(primary), sans-serif;
+  color: get-color-brand(second);
+  background-color: get-color-brand(first);
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}

@@ -2,32 +2,32 @@
   background-image: url("../images/index/bgc-image.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-color: get-color-baner(bgc);
-}
-.banner__content {
-  display: flex;
-  flex-direction: column;
-  row-gap: 30px;
-  margin-bottom: 94px;
-  align-items: center;
-  background: rgba(47, 48, 58, 0.4);
-}
-.banner__header {
-  text-align: center;
-  align-items: center;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36em;
-  color: get-color-baner(text);
-  text-align: center;
-  margin-top: 200px;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-}
-.banner__button {
-  display: block;
-  background-color: get-color-baner(button-bgc);
-  color: get-color-baner(button);
-  padding: 10px 41px 10px 42px;
-  margin-bottom: 200px;
+  background-color: get-color(baner-bgc);
+  &__content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    margin-bottom: 94px;
+    align-items: center;
+    background: rgba(47, 48, 58, 0.4);
+  }
+  &__header {
+    text-align: center;
+    align-items: center;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36em;
+    color: get-color(baner-text);
+    text-align: center;
+    margin-top: 200px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+  &__button {
+    display: block;
+    background-color: get-color(baner-button-bgc);
+    color: get-color(baner-button);
+    padding: 10px 41px 10px 42px;
+    margin-bottom: 200px;
+  }
 }

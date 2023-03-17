@@ -13,20 +13,20 @@
     text-decoration: none;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover {
-      color: get-color(header-logo-first);
+      color: get-color(brand_color-second);
       .header__logo-second {
         color: get-color(header-logo-second);
       }
     }
     &:focus {
-      color: get-color(header-logo-first);
+      color: get-color(brand_color-second);
       .header__logo--blue {
         color: get-color(header-logo-second);
       }
     }
   }
   &__logo-second {
-    color: get-color(header-logo-first);
+    color: get-color(brand_color-second);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   &__menu {
@@ -45,8 +45,8 @@
   }
   &__contact-mail-link {
     text-decoration: none;
-    fill: get-color(header-mail);
-    color: get-color(header-mail);
+    fill: get-color(brand_color-third);
+    color: get-color(brand_color-third);
     font-size: 14px;
     font-weight: 500;
     line-height: 1.14em;
@@ -59,8 +59,8 @@
     &:hover,
     &:focus {
       cursor: pointer;
-      fill: get-color(header-mail-select);
-      color: get-color(header-mail-select);
+      fill: get-color(brand_color-second);
+      color: get-color(brand_color-second);
     }
   }
   &__concact-phone {
@@ -69,8 +69,8 @@
   }
   &__contact-phone-link {
     text-decoration: none;
-    fill: get-color(header-phone);
-    color: get-color(header-phone);
+    fill: get-color(brand_color-third);
+    color: get-color(brand_color-third);
     font-size: 14px;
     font-weight: 500;
     line-height: 1.14em;
@@ -83,12 +83,12 @@
     &:hover,
     &:focus {
       cursor: pointer;
-      fill: get-color(header-phone-select);
-      color: get-color(header-phone-select);
+      fill: get-color(brand_color-second);
+      color: get-color(brand_color-second);
     }
   }
   &__menu-item-selected {
-    color: get-color(header-page-select);
+    color: get-color(brand_color-second);
     position: relative;
     &::after {
       content: "";
@@ -96,7 +96,7 @@
       height: 4px;
       position: absolute;
       bottom: -32px;
-      background: get-color(header-page-bgc-select);
+      background: get-color(brand_color-second);
       width: 100%;
       right: 0;
       border-radius: 2px;

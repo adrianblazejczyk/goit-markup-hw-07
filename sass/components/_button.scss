@@ -9,8 +9,8 @@
 
   &:hover,
   &:focus {
-    color: get-color(button-select);
-    background-color: get-color(button-select-bgc);
+    color: get-color(brand_color-first);
+    background-color: get-color(brand_color-second);
     cursor: pointer;
   }
 

@@ -18,16 +18,16 @@
     display: flex;
   }
   &__link {
-    border: 1px solid get-color(client-color);
+    border: 1px solid get-color(brand_color-sixth);
     border-radius: 4px;
-    fill: get-color(client-color);
+    fill: get-color(brand_color-sixth);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
       border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
     &:focus {
-      fill: get-color(client-select);
-      border-color: get-color(client-select);
+      fill: get-color(brand_color-second);
+      border-color: get-color(brand_color-second);
     }
   }
 }

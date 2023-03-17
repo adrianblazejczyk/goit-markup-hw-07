@@ -1,6 +1,6 @@
 .footer {
   margin: auto;
-  background-color: get-color(footer-bgc);
+  background-color: get-color(brand_color-fifth);
   padding: 60px 0px;
   &__adress-list {
     display: flex;
@@ -17,31 +17,31 @@
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2em;
-    color: get-color(footer-logo-first);
+    color: get-color(brand_color-second);
     text-decoration: none;
     margin-bottom: 20px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:focus,
     &:hover {
-      color: get-color(footer-logo-second);
+      color: get-color(brand_color-first);
       .footer__logo--white {
-        color: get-color(footer-logo-first);
+        color: get-color(brand_color-second);
       }
     }
   }
   &__logo--white {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    color: get-color(footer-logo-second);
+    color: get-color(brand_color-first);
   }
   &__adress-link {
-    color: get-color(footer-link);
+    color: get-color(brand_color-first);
     font-size: 14px;
     line-height: 1.71em;
     font-style: normal;
     margin-bottom: 9px;
   }
   &__adress-mail {
-    color: get-color(footer-mail);
+    color: get-color(brand_color-third);
     font-size: 14px;
     font-weight: 500;
     line-height: 1.71em;
@@ -50,11 +50,11 @@
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:focus,
     &:hover {
-      color: get-color(footer-mail-select);
+      color: get-color(brand_color-second);
     }
   }
   &__adress-phone {
-    color: get-color(footer-phone);
+    color: get-color(brand_color-third);
     font-size: 14px;
     font-weight: 500;
     line-height: 1.71em;
@@ -64,7 +64,7 @@
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:focus,
     &:hover {
-      color: get-color(footer-mail-phone);
+      color: get-color(brand_color-second);
     }
   }
   &__wrap {
@@ -75,7 +75,7 @@
     margin-top: 12px;
   }
   &__social-description {
-    color: get-color(footer-text);
+    color: get-color(brand_color-first);
     font-family: get-font(primary);
     font-style: normal;
     font-weight: 700;
@@ -90,7 +90,7 @@
     gap: 10px;
   }
   &__social-link {
-    fill: get-color(footer-social);
+    fill: get-color(brand_color-sixth);
     padding: 12px 12px;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
@@ -99,8 +99,8 @@
       fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
     &:focus {
-      background-color: get-color(footer-social-bgc-select);
-      fill: get-color(footer-social-select);
+      background-color: get-color(brand_color-second);
+      fill: get-color(brand_color-first);
       cursor: pointer;
     }
   }
@@ -109,7 +109,7 @@
     margin-top: 12px;
   }
   &__newsletter-description {
-    color: get-color(footer-text);
+    color: get-color(brand_color-first);
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
@@ -122,7 +122,7 @@
   }
   &__newsletter-input {
     box-sizing: border-box;
-    background: get-color(footer-bgc);
+    background: get-color(brand_color-fifth);
     width: 326px;
     font-size: 16px;
     line-height: 20px;
@@ -138,8 +138,8 @@
     height: 50px;
     font-weight: 700;
     line-height: 30px;
-    color: get-color(footer-button);
-    background: get-color(footer-button-bgc);
+    color: get-color(brand_color-first);
+    background: get-color(brand_color-second);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     display: flex;
@@ -148,7 +148,7 @@
     padding-left: 42px;
   }
   &__newsletter-ico {
-    fill: get-color(footer-button-ico);
+    fill: get-color(brand_color-first);
     margin-left: 24px;
   }
 }

@@ -18,7 +18,7 @@
     position: absolute;
     width: 528px;
     height: 581px;
-    background-color: get-color(order-modal-bgc);
+    background-color: get-color(brand_color-first);
     border-radius: 4px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -36,7 +36,7 @@
     padding: 9px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
-    background: get-color(order-modal-bgc);
+    background: get-color(brand_color-first);
     margin-top: 8px;
     margin-right: 8px;
     cursor: pointer;
@@ -62,7 +62,7 @@
     font-size: 12px;
     line-height: 14px;
     letter-spacing: 0.01em;
-    color: get-color(order-label-color);
+    color: get-color(brand_color-third);
     display: block;
     margin-top: 10px;
   }
@@ -73,14 +73,14 @@
     margin-top: 4px;
     display: flex;
     align-items: center;
-    fill: get-color(order-field);
+    fill: get-color(brand_color-fourth);
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
       background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
       box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:focus-within {
-      border-color: get-color(order-select);
-      fill: get-color(order-select);
+      border-color: get-color(brand_color-second);
+      fill: get-color(brand_color-second);
       box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
         0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     }
@@ -89,7 +89,7 @@
 
       margin: 10px 12px;
       &:focus-within {
-        fill: get-color(order-select);
+        fill: get-color(brand_color-second);
       }
     }
     .order__input {
@@ -114,7 +114,7 @@
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
-    color: get-color(order-label-color);
+    color: get-color(brand_color-second);
     display: flex;
     justify-content: center;
     position: relative;
@@ -123,8 +123,8 @@
     opacity: 0;
   }
   &__statements-input:checked + .order__statements-ico-check {
-    background-color: get-color(order-select);
-    fill: get-color(order-modal-bgc);
+    background-color: get-color(brand_color-second);
+    fill: get-color(brand_color-first);
     border-radius: 2px;
   }
   &__statements-ico-uncheck {
@@ -134,7 +134,7 @@
     z-index: -2;
   }
   &__statements-ico-check {
-    fill: get-color(order-modal-bgc);
+    fill: get-color(brand_color-first);
     position: absolute;
     top: 4px;
     left: 15px;
@@ -150,14 +150,14 @@
     width: 200px;
     margin-top: 30px;
     margin-bottom: 39px;
-    background: get-color(order-button-bgc);
+    background: get-color(brand_color-second);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     font-weight: 700;
     font-size: 16px;
     line-height: 30px;
     letter-spacing: 0.06em;
-    color: get-color(order-button);
+    color: get-color(brand_color-first);
     align-self: center;
   }
 }

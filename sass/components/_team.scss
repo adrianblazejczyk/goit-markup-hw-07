@@ -1,5 +1,5 @@
 .team {
-  background-color: get-color(team-bgc);
+  background-color: get-color(brand_color-seventh);
   padding-top: 94px;
   padding-bottom: 94px;
   &__header {
@@ -18,7 +18,7 @@
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-    background-color: get-color(team-card);
+    background-color: get-color(brand_color-first);
     margin: 0 0;
     text-align: center;
   }
@@ -32,7 +32,7 @@
   &__description {
     font-size: 16px;
     line-height: 19px;
-    color: get-color(team-description);
+    color: get-color(brand_color-third);
     margin-top: 10px;
     margin-bottom: 16px;
   }
@@ -46,7 +46,7 @@
   &__media-link {
     display: flex;
     border-style: none;
-    fill: get-color(team-link);
+    fill: get-color(brand_color-sixth);
     padding: 12px 12px;
     border-radius: 50%;
     width: 44px;
@@ -55,8 +55,8 @@
       background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
     &:focus {
-      background-color: get-color(team-select);
-      fill: get-color(team-card);
+      background-color: get-color(brand_color-second);
+      fill: get-color(brand_color-first);
       cursor: pointer;
     }
   }

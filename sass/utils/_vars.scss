@@ -3,76 +3,21 @@ $fonts: (
   "secendary": "Raleway",
 );
 $colors: (
-  "brand-first": #ffffff,
-  "baner-text": #ffffff,
-  "baner-button": #ffffff,
-  "button-select": #ffffff,
-  "team-card": #ffffff,
-  "offer-color": #ffffff,
-  "footer-link": #ffffff,
-  "footer-logo-second": #ffffff,
-  "footer-text": #ffffff,
-  "footer-button": #ffffff,
-  "footer-button-ico": #ffffff,
-  "footer-social-select": #ffffff,
-  "order-button": #ffffff,
-  "order-modal-bgc": #ffffff,
-
-  "header-border": #ececec,
-  
-  "brand-second": #212121,
-  "link-color": #212121,
-  "link-select": #212121,
-  "order-field": #212121,
-
-  "header-logo-first": #2196f3,
-  "header-mail-select": #2196f3,
-  "header-phone-select": #2196f3,
-  "header-page-select": #2196f3,
-  "header-page-bgc-select": #2196f3,
-  "baner-button-bgc": #2196f3,
-  "button-select-bgc": #2196f3,
-  "client-select": #2196f3,
-  "team-select": #2196f3,
-  "footer-logo-first": #2196f3,
-  "footer-mail-select": #2196f3,
-  "footer-phone-select": #2196f3,
-  "footer-social-bgc-select": #2196f3,
-  "footer-button-bgc": #2196f3,
-  "order-select": #2196f3,
-  "order-button-bgc": #2196f3,
-
+  "brand_color-first": #ffffff,
+  "brand_color-second": #2196f3,
+  "brand_color-third": #757575,
+  "brand_color-fourth": #212121,
+  "brand_color-fifth": #2f303a,
+  "brand_color-sixth": #afb1b8,
+  "brand_color-seventh": #f5f4fa,
   "header-logo-second": #000000,
-
-  "header-mail": #757575,
-  "header-phone": #757575,
-  "description-color": #757575,
-  "team-description": #757575,
-  "footer-mail": #757575,
-  "footer-phone": #757575,
-  "portfolio-description": #757575,
-  "order-label-color": #757575,
-
-
-  "baner-bgc": #2f303a,
-  "footer-bgc": #2f303a,
-
-  "client-color": #afb1b8,
-  "team-link": #afb1b8,
-  "footer-social": #afb1b8,
-
- 
-  "description-bgc": #f5f4fa,
-  "team-bgc": #f5f4fa,
-
+  "header-border": #ececec,
   "portfolio-border": #eeeeee,
-
   "offer-bgc": rgba(47, 48, 58, 0.8),
   "portfolio-overlay-bgc": rgba(33, 150, 243, 0.9),
   "footer-input": rgba(255, 255, 255, 0.6),
   "footer-input-border": rgba(255, 255, 255, 0.3),
   "order-bgc": rgba(0, 0, 0, 0.2),
-  
 );
 
 @function get-color($key) {

@@ -12,7 +12,7 @@
   &__ico {
     box-sizing: content-box;
     align-self: center;
-    background-color: get-color(description-bgc);
+    background-color: get-color(brand_color-seventh);
     padding: 25px 100px;
     margin-bottom: 30px;
     border-radius: 4px;
@@ -26,7 +26,7 @@
   &_paragraf {
     font-size: 14px;
     line-height: 1.7em;
-    color: get-color(description-color);
+    color: get-color(brand_color-third);
     letter-spacing: 0.03em;
     max-width: 270px;
   }

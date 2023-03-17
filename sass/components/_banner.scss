@@ -2,7 +2,7 @@
   background-image: url("../images/index/bgc-image.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-color: get-color(baner-bgc);
+  background-color: get-color(brand_color-fift);
   &__content {
     display: flex;
     flex-direction: column;
@@ -17,7 +17,7 @@
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36em;
-    color: get-color(baner-text);
+    color: get-color(brand_color-first);
     text-align: center;
     margin-top: 200px;
     letter-spacing: 0.06em;
@@ -25,8 +25,8 @@
   }
   &__button {
     display: block;
-    background-color: get-color(baner-button-bgc);
-    color: get-color(baner-button);
+    background-color: get-color(brand_color-second);
+    color: get-color(brand_color-first);
     padding: 10px 41px 10px 42px;
     margin-bottom: 200px;
   }

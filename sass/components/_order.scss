@@ -143,6 +143,10 @@
   }
   &__statements-text {
     padding-left: 7px;
+    color: get-color(brand_color-third);
+  }
+  &__statements-link{
+    color: get-color(order-link);
   }
   &__button {
     box-sizing: border-box;
